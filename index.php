@@ -8,10 +8,10 @@
     <script src="https://kit.fontawesome.com/c98faec581.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section>
-        <div class="subsection">
-            <div class="heading">
-                <div class="contacts">
+    <section class=" subb">
+        <div class="subsection ">
+            <div class="heading sub-heading">
+                <div class="contacts sub-contacts">
                     <div>
                         <div class="left">
                             <span><?php include "vectors/home.svg" ?></span><span style="border-right:1px solid #707173; padding-right:10px;">Home(Beyiddondolo)</span>
@@ -48,7 +48,7 @@
             </div>
         </div>
         <main>
-            <div class="submain">
+            <div class="submain subb">
                 <div class="submain-flex">
                     <div>
                         <p><img src="./img/categories.png" alt=""><span>All Categories</span></p>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-2">
+            <div class="flex-2 subb">
                 <div class="subflex">
                     <h2>Regitered shops at<span>BeyiDdondolo</span></h2>
                     <div>
@@ -214,9 +214,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex-3" style="margin-top: 440px ;">
+                <div class="flex-3" style="margin-top: 85px;">
                     <div class="subflex-3">
                         <h3>NEW PRODUCTS AVAILABLE</h3>
+                        <span class="right-bootom"></span>
                         
                         <div>
                             <div>
@@ -332,7 +333,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex-3 foods" style="margin-top:470px ;">
+                <div class="flex-3 foods subb">
                     <div class="subflex-3 foods-fresh">
                         <h3>Fresh Foods <span>view more</span></h3>
                         
@@ -493,7 +494,7 @@
                         </div>
                        </div>
                 </div>
-                <div class="flex-3 foods" style="margin-top:20px ;">
+                <div class="flex-3 foods" style="margin-top:20px; width: 100% ;">
                     <div class="subflex-3 foods-fresh">
                         <h3>Hardware <span>view more</span></h3>
                         
@@ -732,7 +733,7 @@
                             </div> -->
                         </div>
                        </div>
-                </div> <div class="flex-3">
+                </div> <div class="flex-3" style="margin-top:150px ;">
                     <div class="subflex-3">
                         <h1>RECOMMENDED ITEMS <span class="border-line"></span></h1>
                         
@@ -850,9 +851,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <footer>
-                    <div class="ft-side">
-                        <div>
+                    <div class="ft-side ft">
                             <div>
                                 <h3>Company</h3>
                                 <p>About us</p>
@@ -891,14 +892,12 @@
                                 <p> <span><?php include "vectors/instagram.svg" ?></span> Instagram</p>
                                 <p><span><?php include "vectors/twitter.svg" ?></span> Twitter</p>
                             </div>
-                        </div>
                     </div>
                     <div class="last">
                         <p></p>
                         <p>@2021 BeyiDdondolo, All rights reserved</p>
                     </div>
                 </footer>
-            </div>
         </main>
     </section>
     <style>

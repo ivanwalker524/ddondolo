@@ -25,17 +25,21 @@
                     </div>
                 </div>
                 <header>
-                    <div class="logo">
-                        <img src="./img/" alt="">
-                        <p>Beyiddondolo</p>
-                    </div>
-                    <div class="search">
-                        <form action="">
-                            <input type="text" name="search" placeholder="search for products by name or category ...">
-                            <input type="submit" value="Search">
-                                <span class="nav-icons"><?php include "vectors/user.svg" ?></span><span style="margin-right: 8px;" class="search-span">Login</span>
-                               <span class="nav-icons"><?php include "vectors/cart-arrow-down.svg" ?></span> <span class="search-span">Cart</span>
-                        </form>
+                    <div class="wd mx-auto">
+                        <div class="flex items-center">
+                            <div class="logo">
+                                <img src="./img/" alt="">
+                                <p>Beyiddondolo</p>
+                            </div>
+                            <div class="search">
+                                <form action="">
+                                    <input type="text" name="search" placeholder="search for products by name or category ...">
+                                    <input type="submit" value="Search">
+                                        <span class="nav-icons"><?php include "vectors/user.svg" ?></span><span style="margin-right: 8px;" class="search-span">Login</span>
+                                       <span class="nav-icons"><?php include "vectors/cart-arrow-down.svg" ?></span> <span class="search-span">Cart</span>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </header>
                 <div class="header-2">

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.wd {
+    max-width: 1200px;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+.top {
+    background-color: #484848;
+    background-image: linear-gradient(#484848 20px, #313131);
+}
+.flex {
+    display: flex;
+}
+.flex-grow {
+    flex-grow: 1;
+}
+.flex-col {
+    flex-direction: column;
+}
+.items-center {
+    align-items: center;
+}
+.top .icon {
+    width: 15px;
+    fill: #f60;
+}
+
+.top a {
+    padding: 3px 10px;
+    color: #ffd5ba;
+    font-weight: bold;
+    border-left: 1px solid #9a9a9a;
+}
+.top a.noborder {
+    border: none;
+}
+.top a span:nth-child(2) {
+    margin-left: 10px;
+}
+.searchbar {
+    border-bottom: 1px dashed #ccc;
+}
+.searchbar #logo {
+    width: 40px;
+    height: 40px;
+    background-color: #ffd5ba;
+    border-radius: 100%;
+}
+.searchbar .icon {
+    width: 17px;
+    fill: #f60;
+}
+.searchbar .wd > div:nth-child(3) span:nth-child(2) {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    margin-left: 7px;
+}
+.searchbar form {
+    max-width: 500px;
+    /* background-color: #ccc; */
+    padding: 10px;
+}
+.searchbar form button[type="submit"] {
+    background-color: #f60;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
+.searchbar form input {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    outline: none;
+}
+.nav2 {
+    background-color: #f1f1f1;
+}
+.nav2 .categories {
+    position: relative;
+    cursor: pointer;
+}
+.nav2 .categories .icon {
+    width: 10px;
+}
+.nav2 .categories .txt {
+    padding: 10px 5px 10px 10px;
+}
+.nav2 .categories .list {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 90%;
+    border-radius: 5px;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    width: 160px;
+    box-shadow: 0 0 2px #ccc;
+    transform: scale(0);
+    transition-delay: 1s;
+}
+.nav2 .categories:hover .list {
+    transform: scale(1);
+    transition-duration: 0s;
+    transition-delay: 0s;
+}
+.nav2 .categories .list a {
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 1s;
+    border-radius: 5px;
+}
+.nav2 .categories .list a:hover {
+    transition: 0s;
+    background-color: #f60;
+    color: #fff;
+    transform: scale(1.2);
+}
+.nav2 .wd > a {
+    margin-left: 10px;
+}

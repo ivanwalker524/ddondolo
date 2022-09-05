@@ -7,11 +7,13 @@ body {
     font-size: 12px;
     font-family: sans-serif;
 }
-.main{
-    position:sticky;
+.main {
+    position: sticky;
     z-index: 2;
     top: 0;
+    box-shadow: 0 3px 5px #d4d4d4;
 }
+
 .wd {
     max-width: 1200px;
 }
@@ -76,7 +78,7 @@ a {
     font-weight: bold;
     margin-left: 7px;
 }
-.searchbar > .wd >p{
+.searchbar > .wd > p {
     margin-left: 5px;
     font-weight: bolder;
 }

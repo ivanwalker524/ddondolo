@@ -97,8 +97,8 @@ foreach(glob('vectors/*.svg') as $vector) {
                         <p><img src="./img/groccery_icon.png" alt=""><span>Groceries</span></p>
                         <p><img src="./img/hardware_icon.png" alt=""><span>Hardware</span></p> 
                     </div>
-                    <div>
-                        <img src="./img/image1.jpeg" width="570px" height="300px" alt="">
+                    <div class="flex-grow">
+                        <img src="./img/image1.jpeg" class="banner-img" alt="">
                     </div>
                     <div>
                         <img src="./img/image.jpg" width="270px" height="300px" alt="">

@@ -1,57 +1,88 @@
+<?php
+// importing all svg icons
+$svg = array();
+foreach(glob('vectors/*.svg') as $vector) {
+    $ph = pathinfo($vector);
+    $svg[$ph['filename']] = file_get_contents($vector);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyi ddondolo | Best prices</title>
-    <script src="https://kit.fontawesome.com/c98faec581.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <section class=" subb">
-        <div class="subsection ">
-            <div class="heading sub-heading">
-                <div class="contacts sub-contacts">
-                    <div>
-                        <div class="left">
-                            <span><?php include "vectors/home.svg" ?></span><span style="border-right:1px solid #707173; padding-right:10px;">Home(Beyiddondolo)</span>
-                            <span style="position: relative;top: 7px;"><?php include "vectors/address-book.svg" ?></span><span style="padding-left: 5px;">About us</span>
-                        </div>
-                        <div class="right">
-                           <span><?php include "vectors/facebook.svg" ?></span> <span style="border-right:1px solid #707173; padding-right:10px;">facebook</span>
-                           <span style="position: relative;top: 7px;"><?php include "vectors/instagram.svg" ?></span> <span style="border-right:1px solid #707173; padding-right:10px;">Instagram</span>
-                            <span style="position: relative;top: 7px;"><?php include "vectors/whatsapp.svg" ?></span><span>Whatsapp</span>
-                        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beyiddondolo</title>
+        <style><?php require 'nav.css'; ?></style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="top">
+                <div class="mx-auto wd flex">
+                    <a href="#" class="flex items-center noborder">
+                        <span class="icon"><?=$svg['home']?></span>
+                        <span>Home (Beyiddondolo)</span>
+                    </a>
+                    <a href="#" class="flex items-center">
+                        <span class="icon"><?=$svg['address-book']?></span>
+                        <span>About us</span>
+                    </a>
+                    <a href="#" class="flex items-center noborder" style="margin-left: auto;">
+                        <span class="icon"><?=$svg['facebook']?></span>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="flex items-center">
+                        <span class="icon"><?=$svg['instagram']?></span>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="flex items-center">
+                        <span class="icon"><?=$svg['whatsapp']?></span>
+                        <span>Whatsapp</span>
+                    </a>
+                </div>
+            </div>
+            <div class="searchbar">
+                <div class="wd mx-auto flex items-center">
+                    <div id="logo"><img src="" alt=""></div>
+                    <p>Beyiddondolo</p>
+                    <div class="flex-grow">
+                        <form class="mx-auto flex items-center">
+                            <div class="flex-grow flex flex-col">
+                                <input type="text" placeholder="search for products by name or category ...">
+                            </div>
+                            <button type="submit">search</button>
+                        </form>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="#" class="flex items-center" style="margin-right: 10px;">
+                            <span class="icon"><?=$svg['user']?></span>
+                            <span>Login</span>
+                        </a>
+                        <a href="#" class="flex items-center">
+                            <span class="icon"><?=$svg['cart-arrow-down']?></span>
+                            <span>cart</span>
+                        </a>
                     </div>
                 </div>
-                <header>
-                    <div class="wd mx-auto">
-                        <div class="flex items-center">
-                            <div class="logo">
-                                <img src="./img/" alt="">
-                                <p>Beyiddondolo</p>
-                            </div>
-                            <div class="search">
-                                <form action="">
-                                    <input type="text" name="search" placeholder="search for products by name or category ...">
-                                    <input type="submit" value="Search">
-                                        <span class="nav-icons"><?php include "vectors/user.svg" ?></span><span style="margin-right: 8px;" class="search-span">Login</span>
-                                       <span class="nav-icons"><?php include "vectors/cart-arrow-down.svg" ?></span> <span class="search-span">Cart</span>
-                                </form>
-                            </div>
+            </div>
+            <div class="nav2">
+                <div class="wd mx-auto flex items-center">
+                    <div class="categories flex items-center">
+                        <div class="icon"><?=$svg['bars']?></div>
+                        <div class="txt">Categories</div>
+                        <div class="icon"><?=$svg['caret-down']?></div>
+                        <div class="list flex flex-col">
+                            <a href="#">All categories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Beauty</a>
+                            <a href="#">Electronics</a>
                         </div>
                     </div>
-                </header>
-                <div class="header-2">
-                    <div>
-                        <p><span><?php include "vectors/bars.svg"; ?></span>Categories <span><?php include "vectors/caret-down.svg"; ?></span></p>
-                        <span>Sell with us</span>
-                    </div>
-
+                    <a href="#">Sell with us</a>
                 </div>
             </div>
         </div>
-        <main>
+        <article class="article">
             <div class="submain subb">
                 <div class="submain-flex">
                     <div>
@@ -95,7 +126,7 @@
                             <p>The_Wadrobe</p>
                         </div>
                         <div>
-                            <span><?php include "vectors/arrow-right.svg"; ?></span>
+                            <span class="icon"><?=$svg['arrow-right']?></span>
                             <p>SEE ALL PHOTOS HERE</p>
                         </div>
                     </div>
@@ -737,7 +768,7 @@
                             </div> -->
                         </div>
                        </div>
-                </div> <div class="flex-3" style="margin-top:150px ;">
+                </div> <div class="flex-3">
                     <div class="subflex-3">
                         <h1>RECOMMENDED ITEMS <span class="border-line"></span></h1>
                         
@@ -891,10 +922,10 @@
                             </div>
                             <div>
                                 <h3>Social</h3>
-                                <p><span><?php include "vectors/whatsapp.svg" ?></span> +256773771117</p>
-                                <p><span><?php include "vectors/facebook.svg" ?></span> Facebook</p>
-                                <p> <span><?php include "vectors/instagram.svg" ?></span> Instagram</p>
-                                <p><span><?php include "vectors/twitter.svg" ?></span> Twitter</p>
+                                <p><span class="icon"><?=$svg ['whatsapp']?></span> +256773771117</p>
+                                <p><span class="icon"><?=$svg ['facebook']?></span> Facebook</p>
+                                <p> <span class="icon"><?=$svg ['instagram']?></span> Instagram</p>
+                                <p><span class="icon"><?=$svg ['twitter']?></span> Twitter</p>
                             </div>
                     </div>
                     <div class="last">
@@ -902,10 +933,10 @@
                         <p>@2021 BeyiDdondolo, All rights reserved</p>
                     </div>
                 </footer>
-        </main>
+        </article>
     </section>
     <style>
-        <?php include_once "index.css" ?>
+        <?php include "index.css" ?>
     </style>
 </body>
 </html>

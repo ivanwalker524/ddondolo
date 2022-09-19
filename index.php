@@ -125,7 +125,7 @@ foreach(glob('vectors/*.svg') as $vector) {
                             <img src="./img/ward.webp" alt="">
                             <p>The_Wadrobe</p>
                         </div>
-                        <div>
+                        <div style="background-color: white ;">
                             <span class="icon"><?=$svg['arrow-right']?></span>
                             <p>SEE ALL PHOTOS HERE</p>
                         </div>
@@ -770,7 +770,7 @@ foreach(glob('vectors/*.svg') as $vector) {
                        </div>
                 </div> <div class="flex-3">
                     <div class="subflex-3">
-                        <h1>RECOMMENDED ITEMS <span class="border-line"></span></h1>
+                        <h1 style="display:flex ;">RECOMMENDED ITEMS <div class="border-line"></div></h1>
                         
                         <div>
                             <div>

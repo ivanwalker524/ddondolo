@@ -35,6 +35,7 @@
 .article {
     /* box-shadow: 0 0 3px 5px #f9f9f9; */
     padding-top: 15px;
+    background-color: var(--gray);
 }
 .article > .submain > .submain-flex {
     display: flex;
@@ -255,6 +256,7 @@ div:last-of-type > img {
     border-radius: 30px;
     color: white;
     font-size: 0.88rem;
+    padding: 5px 3px;
 }
 .foods > .foods-fresh > div {
     margin-top: -30px;
@@ -267,10 +269,18 @@ div:last-of-type > img {
 .foods > .foods-fresh > div > div {
     height: 180px;
 }
+.border-line{
+    border: 2px #bbb4b4 solid;
+    border-radius: 4px;
+    border-left: none;
+    width: 866px;
+    padding-top: 1px;
+    margin: 8px 5px;
+    
+}
 footer {
     background-color: var(--dark);
     height: fit-content;
-    /* margin-bottom: -170px; */
     margin-top: 170px;
     color: #fff;
     border-top: 5px solid #f8841e;
